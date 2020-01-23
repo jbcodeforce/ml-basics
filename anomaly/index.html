@@ -36,7 +36,7 @@
     
     
       
-        <title>Compendium - Machine Learning Studies</title>
+        <title>Anomaly detection - Machine Learning Studies</title>
       
     
     
@@ -96,6 +96,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
+      <a href="#anomaly-detection" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -117,7 +121,7 @@
               Machine Learning Studies
             </span>
             <span class="md-header-nav__topic">
-              Compendium
+              Anomaly detection
             </span>
           
         </div>
@@ -237,10 +241,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Machine Learning
@@ -256,11 +262,76 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../anomaly/" title="Anomaly detection" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Anomaly detection
+      </label>
+    
+    <a href="./" title="Anomaly detection" class="md-nav__link md-nav__link--active">
       Anomaly detection
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#standard-deviation" title="Standard deviation" class="md-nav__link">
+    Standard deviation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-plot" title="Box plot" class="md-nav__link">
+    Box plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-it" title="When to use it?" class="md-nav__link">
+    When to use it?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-feature-to-use-for-anomaly-detection" title="What feature to use for anomaly detection?" class="md-nav__link">
+    What feature to use for anomaly detection?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -273,18 +344,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Compendium" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../compendium/" title="Compendium" class="md-nav__link">
       Compendium
     </a>
-    
   </li>
 
     
@@ -295,21 +359,107 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#standard-deviation" title="Standard deviation" class="md-nav__link">
+    Standard deviation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#box-plot" title="Box plot" class="md-nav__link">
+    Box plot
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#when-to-use-it" title="When to use it?" class="md-nav__link">
+    When to use it?
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-feature-to-use-for-anomaly-detection" title="What feature to use for anomaly detection?" class="md-nav__link">
+    What feature to use for anomaly detection?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/jbcodeforce/ml-basics/edit/master/docs/compendium.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/jbcodeforce/ml-basics/edit/master/docs/anomaly.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Compendium</h1>
-                
-                <ul>
-<li><a href="https://www.amazon.com/Python-Machine-Learning-Sebastian-Raschka/dp/1783555130/ref=asc_df_1783555130/?tag=hyprod-20&amp;linkCode=df0&amp;hvadid=312140868236&amp;hvpos=1o7&amp;hvnetw=g&amp;hvrand=12056535591325453294&amp;hvpone=&amp;hvptwo=&amp;hvqmt=&amp;hvdev=c&amp;hvdvcmdl=&amp;hvlocint=&amp;hvlocphy=9032152&amp;hvtargid=pla-406163981473&amp;psc=1">Python Machine learning - Sebastian Raschka's book</a></li>
-<li><a href="https://www.amazon.com/Programming-Collective-Intelligence-Building-Applications/dp/0596529325/ref=sr_1_2?crid=1UBVCJKMM17Q6&amp;keywords=collective+intelligence&amp;qid=1553021611&amp;s=books&amp;sprefix=collective+inte%2Cstripbooks%2C236&amp;sr=1-2">Collective intelligence - Toby Segaran's book</a></li>
-<li><a href="https://www.coursera.org/learn/machine-learning">Stanford Machine learning training - Andrew Ng</a></li>
-<li>Intel ML 101 tutorial</li>
+                <h1 id="anomaly-detection">Anomaly detection</h1>
+<p>The goal for anomaly detection is, given a dataset <code>{x(1), ... x(m)}</code>
+and a Xtest dataset, the goal is to compute the probability that a X is anomalous: <code>P(X test) &lt; epsilon</code>.</p>
+<p>It is used in user behavioral, like fraud detection, or manufactoring test, or computer monitoring in data center, but it can be also used by data scientist when doing data analysis to verify the data quality and to understand why there are some outliers.</p>
+<p>In anomaly detection, we fit a model <code>P(X)</code> to a set of negative (y=0) examples, without using any positive examples we may have collected of previously observed anomalies. There is a large number of normal examples, and a relatively small number of anomalous examples.</p>
+<p><code>P(X)</code> is following a gaussian distribution. On the dataset we will fit a Gaussian distribution and then find values that have very low probability and hence can be considered anomalies. The red circles in the figure below are anomalies or outliers.</p>
+<p><img alt="Outliers" src="../images/anomaly-1.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note<p>Remember that the gaussian distribution is giving the probability of X using the mean and the variance sigma. The area under the bell curve is always equals to 1</p>
+</p>
+</div>
+<h2 id="standard-deviation">Standard deviation</h2>
+<p>A simple approach, on a unique numberical feature is to use the standard deviation:  In statistical data distribution is approximately normal then about 68% of the data values lie within one standard deviation of the mean and about 95% are within two standard deviations, and about 99.7% lie within three standard deviations. See the code in [ml-python/anomaly-detection/StdDeviation.py].</p>
+<p>When choosing features for an anomaly detection system, it is a good idea to look for features that take on unusually large or small values for (mainly the) anomalous examples.</p>
+<h2 id="box-plot">Box plot</h2>
+<p>Box plots are a graphical depiction of numerical data through their quantiles. It is a very simple but effective way to visualize outliers.</p>
+<h2 id="when-to-use-it">When to use it?</h2>
+<p>use anomaly detection:</p>
+<ul>
+<li>When there is a very small number of positive example (y=1)</li>
+<li>Many different types of anomalies, it is hard for any algorithm to learn from positive examples what the anomalies look like</li>
+<li>Future anomalies may look nothing like any of the anomalous examples we've seen so far</li>
+<li>Fraud detection, monitoring machines in a data center, manufacturing</li>
+</ul>
+<p>use supervised learning</p>
+<ul>
+<li>When both positive and negative examples are large</li>
+<li>Enough positive examples for algorithm to get a sense of what positive examples are like</li>
+<li>Future positive examples likely to be similar to ones in training set</li>
+<li>Spam, weather prediction, cancer classification</li>
+</ul>
+<h3 id="what-feature-to-use-for-anomaly-detection">What feature to use for anomaly detection?</h3>
+<ul>
+<li>historical data plot shows a bell curve like gaussian</li>
+<li>it is possible to transform a non-gaussian feature to a gaussian using square root, log, </li>
 </ul>
                 
                   
@@ -331,7 +481,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../anomaly/" title="Anomaly detection" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href=".." title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -340,11 +490,25 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Anomaly detection
+                Introduction
               </span>
             </div>
           </a>
         
+        
+          <a href="../compendium/" title="Compendium" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Compendium
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>
